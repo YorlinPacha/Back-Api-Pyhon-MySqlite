@@ -1,0 +1,4 @@
+flask
+# pip install -r requirements.txt (esto se hara en terminal para instalar. version pobre pack-jason)
+#cors
+flask_cors
