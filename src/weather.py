@@ -1,4 +1,5 @@
 
+# SEGUNDA ENTRADA
 
 from .weather_repository_sqlite import *
 
@@ -14,9 +15,10 @@ def add_city(weather):
     # if diff_tempertura < 0:
     #     rain_probability = 0.7
     # else:
-        #rain_probability = 0.2     
-    rain_probability = 0.7
-    weather["rain_probability"] = rain_probability
+        #rain_probability = 0.2  
+    ###########   
+    #rain_probability = 0.7
+    #weather["rain_probability"] = rain_probability
     create(weather)
     
 

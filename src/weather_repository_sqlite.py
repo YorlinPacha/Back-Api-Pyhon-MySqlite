@@ -1,3 +1,6 @@
+
+#TERCERA Y ULTIMA ETAPA
+
 # sqlite no guarda dats en un diccionario
 # se define como interfaz ( solo se define los nombres de los metodos)
 
