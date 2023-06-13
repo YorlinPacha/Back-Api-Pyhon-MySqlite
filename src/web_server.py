@@ -27,6 +27,17 @@ def all_cities():
 # 2 guardar o añadir una ciudad
 @app.route("/cities", methods=["POST"])
 def new_city():
+    print("*********** Datos request", request.headers)
+    #Quien eres? autenticacion - para crear una ciudad
+    # de todo solo quiero User
+    user = request.headers['User']
+    password = request.headers['Pass']
+    print("*********** Datos User:", user)
+    
+    if (not(user == "admin" and password == "admin")):
+        print("*********** NO AUTORIZADO ********")
+        return "Usuario no autorizad@", 403
+    
     #llamamos con un valor.  add_city(informacion del formulario)
     #return add_city()
     #recuperar toda la informacion que llega del body en postman
